@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- This file is part product_template_attribute module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id='general']/label[@name='attribute_set']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='general']/field[@name='attribute_set']" position="replace"/>
+    <xpath expr="/form/notebook" position="inside">
+        <page string="Attributes" col="4" id="attributes">
+            <label name="template_attribute_set"/>
+            <field name="template_attribute_set"/>
+            <label string="Product Set" id="attribute_set"/>
+            <field name="attribute_set"/>
+            <newline/>
+            <field name="template_attributes" colspan="6"/>
+        </page>
+    </xpath>
+</data>

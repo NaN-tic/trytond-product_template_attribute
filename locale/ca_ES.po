@@ -1,0 +1,19 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.template,template_attribute_set:"
+msgid "Template Set"
+msgstr "Grup atributs producte"
+
+msgctxt "field:product.template,template_attributes:"
+msgid "Attributes"
+msgstr "Atributs"
+
+msgctxt "view:product.template:"
+msgid "Attributes"
+msgstr "Atributs"
+
+msgctxt "view:product.template:"
+msgid "Product Set"
+msgstr "Grup atributs variant"
