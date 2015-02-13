@@ -17,4 +17,4 @@ class Template:
         domain=[
             ('sets', '=',
                 Eval('template_attribute_set', -1)),
-            ])
+            ], depends=['template_attribute_set'])
