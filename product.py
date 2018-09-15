@@ -8,8 +8,7 @@ from trytond.pyson import Eval
 __all__ = ['Template']
 
 
-class Template:
-    __metaclass__ = PoolMeta
+class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
     template_attribute_set = fields.Many2One('product.attribute.set',
         'Template Set')
