@@ -2,7 +2,7 @@
 <!-- This file is part product_template_attribute module for Tryton.
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <data>
-    <xpath expr="/form/notebook/page[@id='attributes']/field[@name='attribute_set']" position="before">
+    <xpath expr="/form/notebook/page[@id='attributes']/field[@name='attribute_set']" position="after">
         <label name="template_attribute_set"/>
         <field name="template_attribute_set"/>
         <label name="template_attributes"/>
