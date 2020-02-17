@@ -10,10 +10,8 @@ __all__ = ['Template']
 
 class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
-    template_attribute_set = fields.Many2One('product.attribute.set',
-        'Template Set')
     template_attributes = fields.Dict('product.attribute', 'Attributes',
         domain=[
             ('sets', '=',
-                Eval('template_attribute_set', -1)),
-            ], depends=['template_attribute_set'])
+                Eval('attribute_set', -1)),
+            ], depends=['attribute_set'])
