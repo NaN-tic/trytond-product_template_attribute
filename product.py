@@ -5,7 +5,7 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
 
-__all__ = ['Template']
+__all__ = ['Template', 'Product']
 
 
 class Template(metaclass=PoolMeta):
@@ -15,3 +15,12 @@ class Template(metaclass=PoolMeta):
             ('sets', '=',
                 Eval('attribute_set', -1)),
             ], depends=['attribute_set'])
+
+
+class Product(metaclass=PoolMeta):
+    __name__ = 'product.product'
+
+    @classmethod
+    def __setup__(cls):
+        super(Product, cls).__setup__()
+        cls.attributes.states['invisible'] = True
