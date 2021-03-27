@@ -5,9 +5,6 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
 from trytond.transaction import Transaction
-from trytond import backend
-
-__all__ = ['Template', 'Product']
 
 
 class Template(metaclass=PoolMeta):
