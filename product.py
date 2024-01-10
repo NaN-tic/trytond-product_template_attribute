@@ -13,7 +13,7 @@ class Template(metaclass=PoolMeta):
         domain=[
             ('sets', '=',
                 Eval('attribute_set', -1)),
-            ], depends=['attribute_set'])
+            ])
 
     @classmethod
     def __register__(cls, module_name):
