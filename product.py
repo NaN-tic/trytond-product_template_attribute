@@ -39,3 +39,10 @@ class Product(metaclass=PoolMeta):
     def __setup__(cls):
         super(Product, cls).__setup__()
         cls.attributes.states['invisible'] = True
+        readonly = cls.attributes.states.pop('readonly', None)
+        if readonly is not None:
+            editable = ~readonly
+            if 'editable' in cls.attributes.states:
+                cls.attributes.states['editable'] &= editable
+            else:
+                cls.attributes.states['editable'] = editable
